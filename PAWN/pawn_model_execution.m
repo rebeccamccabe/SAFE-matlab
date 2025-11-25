@@ -56,7 +56,7 @@ YY    = cell(M,n);
 tic
 for i=1:M
     for k=1:n
-        YY{i,k} = model_evaluation(fun_test,XX{i,k},varargin{1:NumExtraArg});
+        YY{i,k} = model_execution(fun_test,XX{i,k},varargin{1:NumExtraArg});
     end
 end
 comp_time=toc;
